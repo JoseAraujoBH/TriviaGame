@@ -1,0 +1,54 @@
+body {
+    background:url('../images/planets.jpg');
+    max-width: 1600px;
+    max-height: 800px;
+    background-repeat: no-repeat;
+}
+
+img {
+    opacity: 0.5;
+}
+
+.instructions {
+    text-align: center;
+    color: honeydew;
+}
+
+/* .black {
+    text-align: center;
+    background:url('../images/black.jpg');
+    opacity: .5;
+} */
+
+.questions {
+    text-align: center;
+}
+
+.question1 {
+    color: chartreuse;
+}
+
+.question2 {
+    color: blue;
+}
+
+.question3 {
+    color: brown;
+}
+
+.question4 {
+    color: indigo;
+}
+
+.question5 {
+    color: darkgreen
+}
+
+.question6 {
+    color: coral;
+}
+
+.container {
+    text-align: center;
+    color: honeydew;
+}
