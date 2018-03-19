@@ -3,185 +3,44 @@
 <html>
 
 <head>
-  <title>Trivia Game!</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Trivia Game</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
     
-    <!-- JavaScript Linking -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Reset -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
-    <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
 <body>
-
-    <div class="grid">
-        <div id="quiz">
-
-            <h1> Quiz </h1>
-            <hr style="margin-bottom: 20px"
-
-            <p id="question"></p>
-
-            <div class="buttons">
-                <button id="btn0"> <span id="choice0"> </span> </button>
-                <button id="btn1"> <span id="choice1"> </span> </button>
-                <button id="btn2"> <span id="choice2"> </span> </button>
-                <button id="btn3"> <span id="choice3"> </span> </button>
+ 
+        <div class="grid">
+            <div id="quiz">
+                <h1>Space Trivia</h1>
+                <hr> <span id="question">
+            </span>
+                <div class="buttons">
+                    <button id="btn0"><span id="choice0">A</span> </button>
+                    <button id="btn1"><span id="choice1">B</span> </button>
+                    <button id="btn2"><span id="choice2">C</span> </button>
+                    <button id="btn3"><span id="choice3">D</span> </button>
+                </div>
+                <hr>
+                <footer>
+                    <p id="progress">Q</p>
+                    <p id="timer"></p>
+                </footer>
             </div>
-
-            <hr style="margin-top: 50px">
-            <footer>
-                <p id="progress"> Question x of y </p>
-            </footer>
-
         </div>
 
-    </div>
-
-
-
-        <!-- <br>
-        <br>
-        <br>
-
-    <div class="instructions">
-
-        <h1>
-            TRIVIA GAME!
-        </h1>
-
-    </div>
-  
-    <!-- <div class="black"> -->
-    <!-- <div class="questions">
-
-        <br>
-        <br>
-        <br>
-
-        <div class="question1">
-            <form>
-                <p>How many planets in our solar system have rings?</p>
-                <br>
-                <input type="radio" name="gender" value="One" checked> One
-                <input type="radio" name="gender" value="Two"> Two
-                <input type="radio" name="gender" value="Three"> Three
-                <input type="radio" name="gender" value="Four"> Four
-            </form>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="question2">
-            <form>
-                <p>How many moons does Jupiter have?</p>
-                <br>
-                <input type="radio" name="gender" value="58" checked> 58
-                <input type="radio" name="gender" value="69"> 69
-                <input type="radio" name="gender" value="116"> 116
-                <input type="radio" name="gender" value="128"> 128
-            </form>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="question3">
-            <form>
-                <p>What is the largest moon in our solor system?</p>
-                <br>
-                <input type="radio" name="gender" value="Titan" checked> Titan
-                <input type="radio" name="gender" value="Callisto"> Callisto
-                <input type="radio" name="gender" value="Ganymede"> Ganymede
-                <input type="radio" name="gender" value="Enceledus"> Enceledus
-            </form>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="question4">
-            <form>
-                <p>TEST TEST TEST QUESTION HERE TEST TEST TEST</p>
-                <br>
-                <input type="radio" name="gender" value="male" checked> Male
-                <input type="radio" name="gender" value="female"> Female
-                <input type="radio" name="gender" value="other"> Other
-            </form>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="question5">
-            <form>
-                <p>TEST TEST TEST QUESTION HERE TEST TEST TEST</p>
-                <br>
-                <input type="radio" name="gender" value="male" checked> Male
-                <input type="radio" name="gender" value="female"> Female
-                <input type="radio" name="gender" value="other"> Other
-            </form>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-        <div class="question6">
-            <form>
-                <p>TEST TEST TEST QUESTION HERE TEST TEST TEST</p>
-                <br>
-                <input type="radio" name="gender" value="male" checked> Male
-                <input type="radio" name="gender" value="female"> Female
-                <input type="radio" name="gender" value="other"> Other
-            </form>
-        </div>
-
-
-        <br>
-        <br>
-        <br>
-
-    </div> -->
-    <!-- </div> -->
-
-
-<script type="text/javascript">
-
-    // Created a simple "alert" to get our bearings.
-    // alert("Are you ready to play with crystals?!");
-
-</script>
-
-    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script src="assets/javascript/app.js"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-</body>
 
 <footer class="navbar-default navbar-fixed-bottom">
     <div class="container">
         &copy; Copyright 2018 Jose Araujo
     </div>
 </footer>
-
-</html>
-
 
 </body>
 
